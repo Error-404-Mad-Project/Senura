@@ -19,13 +19,11 @@ public class DeliveryActivityMain extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new Instructions();
+                Intent intent = new Intent(DeliveryActivityMain.this,Instructions.class);
+                startActivity(intent);
             }
         });
 
     }
-    public void openInstructions(){
-    Intent intent = new Intent(this, Instructions.class);
-    startActivity(intent);
-    }
 }
+
